@@ -25,6 +25,8 @@ repositories {
 	mavenCentral()
 }
 
+val kotlinVersion by extra { "1.8.0" }
+
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 	implementation("org.springframework.boot:spring-boot-starter-web")
@@ -42,6 +44,10 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-configuration-processor:2.7.3")
     implementation("mysql:mysql-connector-java:8.0.30")
 
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:${kotlinVersion}")
+    runtimeOnly("org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:${kotlinVersion}")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-slf4j:${kotlinVersion}")
+	implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
 }
 
 kotlin {
