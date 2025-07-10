@@ -34,20 +34,20 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	compileOnly("org.projectlombok:lombok")
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
-	runtimeOnly("org.mariadb.jdbc:mariadb-java-client")
+//	runtimeOnly("org.mariadb.jdbc:mariadb-java-client")
 	annotationProcessor("org.projectlombok:lombok")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
-	implementation("com.h2database:h2")
 
     implementation("org.springframework.boot:spring-boot-configuration-processor:2.7.3")
-    implementation("mysql:mysql-connector-java:8.0.30")
 
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:${kotlinVersion}")
     runtimeOnly("org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:${kotlinVersion}")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-slf4j:${kotlinVersion}")
 	implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
+	implementation("org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.3")
+	implementation("org.xerial:sqlite-jdbc:3.45.2.0")
 }
 
 kotlin {
