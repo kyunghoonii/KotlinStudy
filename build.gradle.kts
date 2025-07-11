@@ -47,7 +47,7 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-slf4j:${kotlinVersion}")
 	implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
 	implementation("org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.3")
-	implementation("org.xerial:sqlite-jdbc:3.45.2.0")
+	implementation("mysql:mysql-connector-java:8.0.29")
 }
 
 kotlin {
